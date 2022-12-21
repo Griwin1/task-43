@@ -6,5 +6,11 @@ window.addEventListener("DOMContentLoaded", () => {
   const button = document.querySelector(".button");
   button.addEventListener("click", () => {
     alert("💣");
+  
+    setTimeout(()=>{
+      window.document.title = "One new message";
+      console.log("changing Title");
+      
+      },3000);
   });
 });
